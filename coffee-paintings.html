@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee paintings</title>
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #fac695 0%,#f5ab66 47%,#ef8d31 100%);
+        width: 70%;
+        padding: 20px;
+        margin: 20px auto;
+      }
+      h1 {
+        text-align: center;
+        color: maroon;
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid maroon;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 5px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 40px 0 40px;
+      }
+      .learn-more {
+        padding-top: 5px;
+        line-height: 2;
+        text-decoration: 0;
+        font-size: 18px;
+        color: maroon;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        color: rgb(128;0;0);
+        font-weight: bold;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: rgb(128, 0, 0);
+        color: white;
+        font-size: 20px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 5px 5px 5px black;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 1;
+        cursor: pointer;
+        color: #fff;
+        background: brown;
+      }
+      .footer {
+        text-align: center;
+               }
+      .container {
+        max: width 600px;
+        margin: 0 auto;
+        padding: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love coffee</h1>
+      <h2><span>Especially coffee painting</span></h2>
+       <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/286/original/286297032_4477679452334478_7215144341589097266_n.jpg?1661206671"
+        alt="Coffee art"
+        width="600"
+      />
+    
+      <p>
+        <em> <strong> Coffee painting </strong> </em>is the art of creating
+        wonderful monochromatic paintings of any object conjured up by the
+        imagination. It is amazing to see how works like these can be created
+        using a single colour, and yet it is possible.
+      </p>
+      <a
+        href="https://www.caffeaiello.it/en/blog-en/curiosities/coffee-painting-how-to-paint-with-coffee-grounds/"
+        target="_blank"
+        class="learn-more">
+        Learn more about coffee art 
+      </a>
+      <button class="see-button">👉 See more pictures</button>
+      <hr>
+      <p class="footer">
+            This page was built by </br>
+        <a href="https://www.facebook.com/nataly.burmaka" target="_blank">
+          Natalia Burmaka
+        </a>
+      </p>
+    </div>
+    <script>
+      function seeMore() {
+        let firstName = prompt("What is your first name?");
+        let email = prompt("What is your e-mail?");
+        if (firstName.length === 0 || email.length === 0) {
+          alert("Enter your name and e-mail");
+        } else {
+          alert(
+            "Thank you, " +
+              firstName +
+              "! We'll be in touch by e-mail and inform you about exhibitions."
+          );
+        }
+      }
+
+      let seeButton = document.querySelector(".see-button");
+      seeButton.addEventListener("click", seeMore);
+    </script>
+  </body>
+</html>
